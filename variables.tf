@@ -1,20 +1,20 @@
 variable "region" {
-    type = "string"
+    type = string
     default = "us-east-2"
 }
 
 variable "vpc-cidr" {
-    type = "string"
+    type = string
     default = "10.0.0.0/16"
 }
 
 variable "tenancy" {
-    type = "string"
+    type = string
     default = "default"
 }
 
 variable "true" {
-    type = "bool"
+    type = bool
     default = true
 }
 
