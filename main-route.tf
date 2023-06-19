@@ -8,7 +8,7 @@ resource "aws_route_table" "public-rtb" {
     gateway_id = aws_internet_gateway.internet-gateway.id
   }
 
-  tags {
+  tags = {
     Name = "terraform_public_rtb"
     Tier = "public"
   }
@@ -22,7 +22,7 @@ resource "aws_route_table" "private-rtb" {
     nat_gateway_id = aws_nat_gateway.nat-gateway.id
   }
 
-  tags {
+  tags = {
     Name = "terraform_private_rtb"
     Tier = "private"
   }
